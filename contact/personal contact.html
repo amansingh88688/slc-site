@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Details</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      color: #333;
+    }
+
+    .container {
+      width: 380px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 40px;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 33px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #337ab7;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 17px;
+      line-height: 1.4; 
+    }
+
+    .details{
+      text-align: center;
+    }
+
+    .contact-details {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .button {
+      padding: 13px 35px;
+      background-color: #337ab7;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.5s;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      font-size: 16px; 
+      font-weight: bold; 
+    }
+
+    .button:hover {
+      background-color: #2d567a;
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 5px solid #337ab7;
+      animation: rotate 4s infinite linear;
+    }
+
+    /* Footer styles */
+    footer {
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+
+      .profile-image {
+        width: 100%;
+        height: auto;
+      }
+
+      .contact-details {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="details">
+        <h1>Contact Details</h1>
+        <img src="https://e1.pxfuel.com/desktop-wallpaper/577/168/desktop-wallpaper-gentleman-jacket-person-clothing-smile-man-suit-professional-male-formal-wear-businessperson-trevor-noah-the-daily-show-white-collar-worker-business-executive-2048x1334-men-business-thumbnail.jpg" alt="Profile Image" class="profile-image">
+        <p>Name: abcdiitmadras</p>
+        <p>Post: XYZ Secretary</p>
+        <p>Email: abcdiitmadras@gmail.com</p>
+        <p>Phone: 1234567890</p>
+    </div>
+    <div class="contact-details">
+        <a href="mailto:iitmadras@gmail.com" class="button">Email</a>
+        <a href="tel:1234567890" class="button">Call</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Student Legislative Council. All rights reserved.</p>
+  </footer>
+</body>
+</html>
