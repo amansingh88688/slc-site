@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div class="form">
+        <h1>Post your Agenda</h1>
+        
+        
+        <div class="agenda_inp">
+            <h3>Enter your Agenda :</h3>
+            <textarea name="" id="agenda" placeholder="What's your agenda..."></textarea>
+        </div>
+
+        <div class="smail_inp">
+            <h3>Enter your Smail :</h3>
+            <input type="email" id="smail" placeholder="Enter your Smail..." name="amans">
+        </div>  
+        
+        <div class="otpverify">
+            <div class="otp_inp">
+                <h3>Enter OTP : </h3>
+                <div  class="otp_sub">
+                    <input type="text" id="otp_inp" placeholder="Enter the OTP sent to your smail">
+                    <button class="btn" id="otp-resend">Resend</button>
+                    <div class="otp_sub_sub">
+                        <p>* check spam folder for OTP</p>
+                        <button class="btn" id="otp-btn">Verify OTP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <button class="btn" onclick="sendotp()" id="sendbtn" >Post Agenda</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
